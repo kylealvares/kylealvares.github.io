@@ -25,7 +25,7 @@ body {
     justify-content: center;
     min-height: 100vh;
     min-width: 100vw;
-    background: linear-gradient(to bottom left, var(--slate-900), var(--slate-950), black);
+    background: linear-gradient(to bottom left, var(--slate-900), var(--slate-950), black, var(--slate-950));
 }
 
 h1 {
@@ -268,7 +268,7 @@ ul>li:before {
 }
 
 #writer .role {
-    color: var(--blue-100);
+    color: var(--blue-200);
 }
 
 #writer .company {
@@ -294,3 +294,127 @@ ul>li:before {
 #waterloo .border {
     border-image: linear-gradient(to bottom, var(--amber-400), var(--slate-950)) 1;
 }
+
+#contact {
+    width: 100%;
+}
+
+#contact .window {
+    height: 400px;
+    /* width: 50%; */
+    /* background-color: #161b22; */
+    background-color: var(--zinc-950);
+    border: 1px solid var(--zinc-800);
+    border-top: none;
+    border-radius: 8px;
+    box-shadow: 0 0 20px 20px black;
+}
+
+#contact .app-bar {
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    height: 40px;
+    background-color: var(--zinc-800);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+#contact .form {
+    padding: 8px 12px;
+}
+
+label {
+    font-stretch: 100%;
+    font-weight: 375;
+    margin-right: 8px;
+    font-size: 14px;
+    color: var(--zinc-400);
+}
+
+input {
+    color: var(--zinc-300);
+}
+
+input,
+textarea {
+    width: 100%;
+    display: block;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+textarea {
+    padding: 8px 0;
+    resize: none;
+    height: 260px;
+    color: var(--zinc-200);
+}
+
+.email,
+.contact-name {
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--zinc-900);
+}
+
+.email input {
+    font-family: var(--mono-font);
+}
+
+.submit {
+    display: flex;
+    justify-content: end;
+}
+
+.window button svg {
+    stroke-width: 1px;
+    height: 20px;
+    width: 20px;
+    fill: var(--zinc-400);
+}
+
+.window button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    background-color: transparent
+        /* background-image: linear-gradient(to bottom, var(--indigo-600), var(--indigo-800)); */
+}
+
+.window button:hover {
+    cursor: pointer;
+    background-color: var(--zinc-700);
+}
+
+.reach-out {
+    font-weight: 500;
+    font-stretch: 110%;
+    max-width: 475px;
+    color: var(--zinc-400);
+    /* text-align: center; */
+}
+
+
+#contact h2 {
+    font-size: 48px;
+}
+
+/* .email input[type="text"] {
+    background: linear-gradient(to bottom, #ff00ff 0%, #00ffff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}    */
