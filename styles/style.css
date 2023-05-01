@@ -404,7 +404,7 @@ textarea {
     font-weight: 500;
     font-stretch: 110%;
     max-width: 475px;
-    color: var(--zinc-400);
+    color: var(--slate-400);
     /* text-align: center; */
 }
 
@@ -412,6 +412,24 @@ textarea {
 #contact h2 {
     font-size: 48px;
 }
+
+footer {
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+footer a {
+    font-family: var(--mono-font);
+    color: var(--slate-400);
+    font-size: 12px;
+    transition: 0.1s ease-out;
+}
+
+footer a:hover {
+    color: var(--accent);
+    transition: 0.1s ease-in;
+}
+
 
 /* .email input[type="text"] {
     background: linear-gradient(to bottom, #ff00ff 0%, #00ffff 100%);
