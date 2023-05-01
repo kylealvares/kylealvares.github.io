@@ -14,16 +14,113 @@
 
 <body>
     <div class="content">
-        <div class="space-between">
-            <div class="section-a">
-                <h1>Welcome, I'm</h1>
-                <h2>Kyle Alvares</h2>
-                <h3>I use code to make life easier.</h3>
-                <p class="desc">I recently completed by undergraduate in Computer Science. I'm passionate designing
-                    about creating apps and products. Currently, I work on creating products that are easy-to-use and accessible at 
-                    <a href="https://www.ibm.com/" target="_blank">IBM</a>.</p>
+        <section id="intro">
+            <h1>Welcome, I'm</h1>
+            <h2>Kyle Alvares</h2>
+            <h3>I use code to make life easier.</h3>
+            <p class="desc">I recently completed by undergraduate in Computer Science and I'm passionate designing
+                about creating apps and products. Currently, I work on creating products that are easy-to-use and
+                accessible at
+                <a href="https://www.ibm.com/" target="_blank" class="underline">IBM</a>.
+            </p>
+            <a href="#about" id="keep-reading" class="box-link">More about me!</a>
+        </section>
+        <section id="about" class="space-between">
+            <div>
+                <h2><span class="accent">01.</span>About Me</h2>
+                <p>As a computer science graduate, I am passionate about creating, innovating, and designing with
+                    technology. I am constantly learning new technologies and applying them to my projects, particularly
+                    in
+                    the realm of UI/UX design.
+                </p>
+                <p>
+                    Working collaboratively with teams is a strength of mine, and I bring an
+                    organized approach to every project I work on. Additionally, I prioritize accessible practices in my
+                    work, which I learned during a past internship and have since integrated into my design process.
+                    Overall, my passion for technology and design drives me to create impactful and accessible digital
+                    experiences.
+                </p>
+                <p>Some technologies I recently used include:</p>
+                <div class="flex technologies">
+                    <ul>
+                        <li>JavaScript (ES6+)</li>
+                        <li>Node.js</li>
+                        <li>React</li>
+                    </ul>
+                    <ul>
+                        <li>Flutter</li>
+                        <li>Firebase</li>
+                        <li>Jekyll</li>
+                    </ul>
+                </div>
             </div>
-        </div>
+            <div>
+                <img id="mac" src="assets/macintosh-1984.png" alt="macintosh-1984">
+            </div>
+        </section>
+        <section id="experience">
+            <h2><span class="accent">02.</span>Experience</h2>
+            <div class="flex">
+                <div id="writer" class="column">
+                    <div class="head">
+                        <div class="icon">
+                            <div class="blur"></div>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25M16.5 7.5V18a2.25 2.25 0 002.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 002.25 2.25h13.5M6 7.5h3v3H6v-3z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="role">Technical Writer</p>
+                            <p class="company">IBM</p>
+                        </div>
+                    </div>
+                    <div class="body">
+                        <div class="border"></div>
+                        <div>
+                            <ul>
+                                <li>Created precise, concise and usable documentation for products that client's use.</li>
+                                <li>Created tools to assist writers in the writing process and teams in the release process.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="waterloo" class="column">
+                    <div class="head">
+                        <div class="icon">
+                            <div class="blur"></div>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="role">Software Developer</p>
+                            <p class="company">Waterloo University</p>
+                        </div>
+                    </div>
+                    <div class="body">
+                        <div class="border"></div>
+                        <div>
+                            <ul>
+                                <li>Worked with professor to fulfill contract from the European Space Agency to construct a machine learning model that identifies different Earth surface types.</li>
+                                <li>Support the development of algorithms and a system for processing of large satellite data sets in support of Global Water Futures TTSW project.</li>
+                                <li>Provide computing support using Compute Canada resources.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <h2><span class="accent">03.</span>Projects</h2>
+        </section>
+        <section id="contact">
+            <h2><span class="accent">04.</span>Contact</h2>
+        </section>
+        <!-- <footer>Designed & Built By Kyle Alvares</footer> -->
     </div>
 </body>
 
