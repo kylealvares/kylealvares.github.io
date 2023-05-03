@@ -495,6 +495,7 @@ ul>li:before {
 }
 
 .featured-box .title {
+    color: var(--indigo-300);
     font-stretch: 125%;
     font-weight: 700;
     font-size: 32px;
@@ -578,6 +579,9 @@ textarea {
 
 .email input {
     font-family: var(--mono-font);
+    /* background-color: var(--indigo-700);
+    padding: 4px;
+    border-radius: 2px; */
 }
 
 .submit {
