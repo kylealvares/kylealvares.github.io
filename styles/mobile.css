@@ -1,3 +1,14 @@
+.content {
+    padding: 0 20px;
+}
+section#intro p.desc {
+    max-width: 100%;
+}
+
+section#about p {
+    padding-right: 24px;
+}
+
 .featured-projects {
     display: none;
 }
