@@ -1,4 +1,11 @@
-console.clear();
+const preloader = $('#preloader');
+setTimeout(() => {
+  preloader.addClass('fade-out');
+  setTimeout(() => {
+    preloader.css('display', 'none');
+  }, 1000);
+}, 1800);
+
 const featuresEl = document.querySelector(".box-wrap");
 const featureEls = document.querySelectorAll(".box");
 
@@ -10,14 +17,19 @@ featuresEl.addEventListener("pointermove", (ev) => {
   });
 });
 
-// resize input field
+const showMore = $('#more-experience button');
+
+showMore.click(e => {
+  if($('.other').height() != 0) {
+    $('.other').height(0);
+  } else {
+    $('.other').height('auto');
+  }
+}); 
+
+
 function resizeInput() {
-    // Get the input element
-    var input = document.getElementById("email");
-
-    // Get the width of the input's value
-    var width = input.value.length * 8 + 8; // Adjust the multiplier to fit your font size
-
-    // Set the width of the input element
+    let input = document.getElementById("email");
+    let width = input.value.length * 8 + 8; 
     input.style.width = width + "px";
 }
