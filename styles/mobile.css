@@ -1,0 +1,32 @@
+.featured-projects {
+    display: none;
+}
+
+.featured-projects-mobile {
+    display: block;
+}
+
+.featured-projects-mobile .window{
+    margin-bottom: 40px;
+}
+
+.featured-projects-mobile .details {
+    margin-bottom: 64px;
+}
+
+.featured-projects-mobile #reference-window,
+.featured-projects-mobile #planner-window {
+    width: auto;
+}
+
+.featured-box {
+    padding-top: 50px;
+}
+
+.featured-box .text {
+    padding: 0 40px;
+}
+
+.box {
+    height: 600px;
+}

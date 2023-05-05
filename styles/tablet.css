@@ -1,0 +1,86 @@
+.preloader {
+    display: none;
+}
+nav {
+    padding: 0 25px;
+}
+
+.menu {
+    display: none;
+}
+
+.mobile-menu {
+    display: block;
+    cursor: pointer;
+}
+
+.mobile-menu svg {
+    height: 24px;
+    width: 24px;
+    stroke: var(--slate-400);
+    fill: var(--slate-400);
+}
+.content {
+    padding: 0 50px;
+    width: 100%;
+}
+
+section {
+    margin-bottom: 24px;
+}
+
+section#intro h2,
+section#intro h3 {
+    font-size: clamp(2.5rem, 3vw, 4rem);
+}
+
+section#intro p.desc {
+    max-width: 80%;
+    font-size: clamp(1.2rem, 1vw, 2rem);
+    line-height: 26px;
+}
+section:not(#intro) h2 {
+    width: 100%;
+    font-size: clamp(2rem, 2.2vw, 3rem);
+}
+
+#about img {
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 90%;
+}
+
+#experience .column {
+    width: 90%;
+}
+
+#experience .flex {
+    display: block;
+    width: 100%;
+}
+
+#contact {
+    padding-top: 100px;
+    display: block;
+}
+
+.reach-out {
+    font-size: clamp(1rem, 1.5vw, 2rem);
+    max-width: 475px;
+    margin-bottom: 32px;
+}
+
+.space-between {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.space-between img {
+    margin: auto;
+    text-align: center;
+}
+
+.box-link {
+    font-size: 14px;
+}

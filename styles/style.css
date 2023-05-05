@@ -124,6 +124,7 @@ section {
 section h2 span {
     margin-right: 20px;
 }
+
 section#about p {
     line-height: 18px;
     font-size: 16px;
@@ -323,8 +324,7 @@ ul>li:before {
 }
 
 #leadership {
-    height: 0;
-    overflow: hidden;
+    display: none;
 }
 
 #leadership .blur {
@@ -351,18 +351,24 @@ ul>li:before {
     margin-bottom: 32px;
 }
 
+.featured-projects-mobile {
+    display: none;
+}
+
 .featured {
     margin-bottom: 48px;
     position: relative;
     height: 400px;
 }
 
-.featured .title {
+.featured .title,
+.featured-projects-mobile .title {
     font-weight: 600;
     font-stretch: 125%;
 }
 
-.featured .desc {
+.featured .desc,
+.featured-projects-mobile .desc {
     margin: 8px 0;
     background-color: var(--slate-900);
     padding: 16px;
@@ -370,16 +376,19 @@ ul>li:before {
     box-shadow: 0 0 15px 5px var(--slate-950);
 }
 
-.featured .desc p {
+.featured .desc p,
+.featured-projects-mobile .desc p {
     font-size: 15px;
     color: var(--slate-300);
 }
 
-.featured .desc p:not(:last-child) {
+.featured .desc p:not(:last-child),
+.featured-projects-mobile .desc p:not(:last-child) {
     margin-bottom: 8px;
 }
 
-.featured ul {
+.featured ul,
+.featured-projects-mobile ul {
     display: flex;
     margin: 0;
     padding: 0;
@@ -389,11 +398,13 @@ ul>li:before {
     justify-content: end;
 }
 
-.featured li::before {
+.featured li::before,
+    .featured-projects-mobile li::before {
     background-image: none;
 }
 
-.featured li {
+.featured li,
+.featured-projects-mobile li {
     font-family: var(--mono-font);
     font-size: 12px;
     margin-right: 12px;
@@ -446,11 +457,13 @@ ul>li:before {
     border-bottom-right-radius: 4px;
 }
 
-#references .window .bg-img {
+#references .window .bg-img,
+.featured-projects-mobile #reference-window {
     background-image: url('/assets/references.png');
 }
 
-#planner .window .bg-img {
+#planner .window .bg-img,
+.featured-projects-mobile #planner-window { 
     background-image: url('/assets/planner.png');
 }
 
@@ -687,6 +700,10 @@ footer a {
 footer a:hover {
     color: var(--accent);
     transition: 0.1s ease-in;
+}
+
+.mobile-menu {
+    display: none;
 }
 
 nav {

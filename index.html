@@ -10,6 +10,8 @@
     <link rel="preload" href="fonts/Mona-Sans.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/JetBrainsMono-Variable.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/tablet.css" media="screen and (max-width: 1000px)">
+    <link rel="stylesheet" type="text/css" href="styles/mobile.css" media="screen and (max-width: 885px)">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"
         integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous" defer></script>
     <script src="index.js" defer></script>
@@ -36,12 +38,19 @@
             <div class="blur"></div>
             <a href="#" id="logo">kyle alvares</a>
         </div>
-        <div>
+        <div class="menu">
             <a href="#about" class="underline"><span>01.</span> About</a>
             <a href="#experience" class="underline"><span>02.</span> Experience</a>
             <a href="#projects" class="underline"><span>03.</span> Projects</a>
             <a href="#contact" class="underline"><span>04.</span> Contact</a>
             <a href="assets/resume.pdf" target="_blank" class="box-link">Resume</a>
+        </div>
+        <div class="mobile-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+            </svg>
         </div>
     </nav>
     <div class="content">
@@ -61,16 +70,21 @@
                 <div class="space-between">
                     <div>
                         <h2><span class="accent">01.</span>About Me</h2>
-                        <p>As a computer science graduate, I am passionate about creating, innovating, and designing with
-                            technology. I am constantly learning new technologies and applying them to my projects, particularly
+                        <p>As a computer science graduate, I am passionate about creating, innovating, and designing
+                            with
+                            technology. I am constantly learning new technologies and applying them to my projects,
+                            particularly
                             in
                             the realm of UI/UX design.
                         </p>
                         <p>
                             Working collaboratively with teams is a strength of mine, and I bring an
-                            organized approach to every project I work on. Additionally, I prioritize accessible practices in my
-                            work, which I learned during a past internship and have since integrated into my design process.
-                            Overall, my passion for technology and design drives me to create impactful and accessible digital
+                            organized approach to every project I work on. Additionally, I prioritize accessible
+                            practices in my
+                            work, which I learned during a past internship and have since integrated into my design
+                            process.
+                            Overall, my passion for technology and design drives me to create impactful and accessible
+                            digital
                             experiences.
                         </p>
                         <p>Some technologies I recently used include:</p>
@@ -97,7 +111,7 @@
             <h2><span class="accent">02.</span>Experience</h2>
             <div class="flex">
                 <div id="writer" class="column">
-                    <div class="head"  data-aos="fade-in" data-aos-delay="100" data-aos-once="true">
+                    <div class="head" data-aos="fade-in" data-aos-delay="100" data-aos-once="true">
                         <div class="icon">
                             <div class="blur"></div>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -111,7 +125,7 @@
                             <p class="company">IBM</p>
                         </div>
                     </div>
-                    <div class="body"  data-aos="fade-in" data-aos-delay="200" data-aos-once="true">
+                    <div class="body" data-aos="fade-in" data-aos-delay="200" data-aos-once="true">
                         <div class="border"></div>
                         <div>
                             <ul>
@@ -201,15 +215,140 @@
                         </div>
                     </div>
                 </div>
-                <div id="more-experience">
+                <div id="more-experience" data-aos="fade-up" data-aos-once="true">
                     <button class="box-link centered" onclick="">Show More</button>
                 </div>
             </div>
         </section>
         <section id="projects">
-            <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0" data-aos-once="true"><span class="accent">03.</span>Projects</h2>
-            <div id="references" class="featured" data-aos="fade-up" data-aos-duration="800" data-aos-delay="0" data-aos-once="true">
-                <div class="window" method="POST" action="https://formspree.io/f/xyyokokl">
+            <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0" data-aos-once="true"><span
+                    class="accent">03.</span>Projects</h2>
+            <div class="featured-projects">
+                <div id="references" class="featured" data-aos="fade-up" data-aos-duration="800" data-aos-delay="0"
+                    data-aos-once="true">
+                    <div class="window" method="POST" action="https://formspree.io/f/xyyokokl">
+                        <div class="app-bar space-between">
+                            <div class="flex">
+                                <div class="dot" style="background-color: var(--red-500);"></div>
+                                <div class="dot" style="background-color: var(--amber-500);"></div>
+                                <div class="dot" style="background-color: var(--green-500);"></div>
+                            </div>
+                            <a href="https://kylealvares.github.io/references/" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="bg-img">
+                            <!-- <img src="assets/references.png" alt="references display"> -->
+                        </div>
+                    </div>
+                    <div class="details" data-aos="fade-up" data-aos-duration="800" data-aos-delay="0"
+                        data-aos-once="true">
+                        <p class="subtitle">Featured</p>
+                        <p class="title">References</p>
+                        <div class="desc">
+                            <p>
+                                References uses a static site generator that leverages Jekyll, which includes Markdown,
+                                YAML, and
+                                JavaScript to create a user-friendly interface for organizing notes for several courses.
+                                The purpose of this project is to provide an easy way for users to access notes and
+                                quizzes
+                                in a beautifully designed UI/UX package that emphasizes minimalism.
+                            </p>
+                            <p>
+                                Through this project, I
+                                gained experience in web development and demonstrated my ability to incorporate a
+                                variety of
+                                technologies to meet a specific need while prioritizing user experience.
+                            </p>
+                        </div>
+                        <ul class="tech">
+                            <li>Jekyll</li>
+                            <li>Markdown</li>
+                            <li>YAML</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="box-wrap" data-aos="fade-up" data-aos-duration="800" data-aos-delay="0"
+                    data-aos-once="true">
+                    <div class="box">
+                        <div class="box-content featured-box space-between">
+                            <div class="text">
+                                <div class="title">Transit App</div>
+                                <div class="body">DRTransit is an app aimed at providing transit information to users in
+                                    Durham
+                                    Region. The app features a user-friendly UI design for easy use and a wide range of
+                                    features to
+                                    ensure comprehensive transit information. To achieve this, the app uses various
+                                    technologies
+                                    such as the Google Maps API, Flutter Firestore, and other packages to put the app
+                                    together. The
+                                    app is designed to be an all-in-one tool for Durham Regional Transit users.
+                                </div>
+                                <ul class="tech">
+                                    <li>Flutter</li>
+                                    <li>Firestore</li>
+                                    <li>Google Maps API</li>
+                                </ul>
+                            </div>
+                            <img height="400px" src="assets/drt-iphones-light.png" alt="transit app screenshot">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="planner" class="featured" data-aos="fade-up" data-aos-duration="800" data-aos-delay="0"
+                    data-aos-once="true">
+                    <div class="details" data-aos="fade-up" data-aos-duration="800" data-aos-delay="0"
+                        data-aos-once="true">
+                        <p class="subtitle">Featured</p>
+                        <p class="title">Planner</p>
+                        <div class="desc">
+                            <p>Planner is an app created using React JS that enables students to manage their schedules,
+                                grades, assignments, homework, class links, and remote lectures all in one place. The
+                                app is
+                                designed to be user-friendly, providing a convenient and efficient way for students to
+                                stay
+                                organized and on top of their academic responsibilities.
+                            </p>
+                            <p>
+                                This project allowed me to gain valuable experience in web development, as well as
+                                demonstrate my ability to create software that meets the needs of a specific user group.
+                            </p>
+                        </div>
+                        <ul class="tech">
+                            <li>React</li>
+                            <li>APIs</li>
+                        </ul>
+                    </div>
+                    <div class="window" method="POST" action="https://formspree.io/f/xyyokokl">
+                        <div class="app-bar space-between">
+                            <div class="flex">
+                                <div class="dot" style="background-color: var(--red-500);"></div>
+                                <div class="dot" style="background-color: var(--amber-500);"></div>
+                                <div class="dot" style="background-color: var(--green-500);"></div>
+                            </div>
+                            <a href="https://github.com/Kyle-Alvares/courses" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-github">
+                                    <title>GitHub</title>
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="bg-img"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="featured-projects-mobile">
+
+                <div class="window" data-aos="fade-up" data-aos-duration="800" data-aos-delay="0" data-aos-once="true">
                     <div class="app-bar space-between">
                         <div class="flex">
                             <div class="dot" style="background-color: var(--red-500);"></div>
@@ -224,7 +363,7 @@
                             </svg>
                         </a>
                     </div>
-                    <div class="bg-img">
+                    <div class="bg-img" id="reference-window">
                         <!-- <img src="assets/references.png" alt="references display"> -->
                     </div>
                 </div>
@@ -236,12 +375,14 @@
                             References uses a static site generator that leverages Jekyll, which includes Markdown,
                             YAML, and
                             JavaScript to create a user-friendly interface for organizing notes for several courses.
-                            The purpose of this project is to provide an easy way for users to access notes and quizzes
+                            The purpose of this project is to provide an easy way for users to access notes and
+                            quizzes
                             in a beautifully designed UI/UX package that emphasizes minimalism.
                         </p>
                         <p>
                             Through this project, I
-                            gained experience in web development and demonstrated my ability to incorporate a variety of
+                            gained experience in web development and demonstrated my ability to incorporate a
+                            variety of
                             technologies to meet a specific need while prioritizing user experience.
                         </p>
                     </div>
@@ -251,55 +392,36 @@
                         <li>YAML</li>
                     </ul>
                 </div>
-            </div>
 
-            <div class="box-wrap" data-aos="fade-up" data-aos-duration="800" data-aos-delay="0" data-aos-once="true">
-                <div class="box">
-                    <div class="box-content featured-box space-between">
-                        <div class="text">
-                            <div class="title">Transit App</div>
-                            <div class="body">DRTransit is an app aimed at providing transit information to users in
-                                Durham
-                                Region. The app features a user-friendly UI design for easy use and a wide range of
-                                features to
-                                ensure comprehensive transit information. To achieve this, the app uses various
-                                technologies
-                                such as the Google Maps API, Flutter Firestore, and other packages to put the app
-                                together. The
-                                app is designed to be an all-in-one tool for Durham Regional Transit users.
+
+                <div class="box-wrap" data-aos="fade-up" data-aos-duration="800" data-aos-delay="0"
+                    data-aos-once="true">
+                    <div class="box">
+                        <div class="box-content featured-box space-between">
+                            <div class="text">
+                                <div class="title">Transit App</div>
+                                <div class="body">DRTransit is an app aimed at providing transit information to users in
+                                    Durham
+                                    Region. The app features a user-friendly UI design for easy use and a wide range of
+                                    features to
+                                    ensure comprehensive transit information. To achieve this, the app uses various
+                                    technologies
+                                    such as the Google Maps API, Flutter Firestore, and other packages to put the app
+                                    together. The
+                                    app is designed to be an all-in-one tool for Durham Regional Transit users.
+                                </div>
+                                <ul class="tech">
+                                    <li>Flutter</li>
+                                    <li>Firestore</li>
+                                    <li>Google Maps API</li>
+                                </ul>
                             </div>
-                            <ul class="tech">
-                                <li>Flutter</li>
-                                <li>Firestore</li>
-                                <li>Google Maps API</li>
-                            </ul>
+                            <img height="400px" src="assets/drt-iphones-light.png" alt="transit app screenshot">
                         </div>
-                        <img height="400px" src="assets/drt-iphones-light.png" alt="transit app screenshot">
                     </div>
                 </div>
-            </div>
 
-            <div id="planner" class="featured" data-aos="fade-up" data-aos-duration="800" data-aos-delay="0" data-aos-once="true">
-                <div class="details" data-aos="fade-up" data-aos-duration="800" data-aos-delay="0" data-aos-once="true">
-                    <p class="subtitle">Featured</p>
-                    <p class="title">Planner</p>
-                    <div class="desc">
-                        <p>Planner is an app created using React JS that enables students to manage their schedules,
-                            grades, assignments, homework, class links, and remote lectures all in one place. The app is
-                            designed to be user-friendly, providing a convenient and efficient way for students to stay
-                            organized and on top of their academic responsibilities.
-                        </p>
-                        <p>
-                            This project allowed me to gain valuable experience in web development, as well as
-                            demonstrate my ability to create software that meets the needs of a specific user group.
-                        </p>
-                    </div>
-                    <ul class="tech">
-                        <li>React</li>
-                        <li>APIs</li>
-                    </ul>
-                </div>
-                <div class="window" method="POST" action="https://formspree.io/f/xyyokokl">
+                <div class="window" data-aos="fade-up" data-aos-duration="800" data-aos-delay="0" data-aos-once="true">
                     <div class="app-bar space-between">
                         <div class="flex">
                             <div class="dot" style="background-color: var(--red-500);"></div>
@@ -317,10 +439,34 @@
                             </svg>
                         </a>
                     </div>
-                    <div class="bg-img"></div>
+                    <div class="bg-img" id="planner-window"></div>
                 </div>
+                <div class="details" data-aos="fade-up" data-aos-duration="800" data-aos-delay="0" data-aos-once="true">
+                    <p class="subtitle">Featured</p>
+                    <p class="title">Planner</p>
+                    <div class="desc">
+                        <p>Planner is an app created using React JS that enables students to manage their schedules,
+                            grades, assignments, homework, class links, and remote lectures all in one place. The
+                            app is
+                            designed to be user-friendly, providing a convenient and efficient way for students to
+                            stay
+                            organized and on top of their academic responsibilities.
+                        </p>
+                        <p>
+                            This project allowed me to gain valuable experience in web development, as well as
+                            demonstrate my ability to create software that meets the needs of a specific user group.
+                        </p>
+                    </div>
+                    <ul class="tech">
+                        <li>React</li>
+                        <li>APIs</li>
+                    </ul>
+                </div>
+                
             </div>
-            <p class="center" id="other-projects" data-aos="fade-up" data-aos-delay="0" data-aos-once="true">Some Other Projects</p>
+
+            <p class="center" id="other-projects" data-aos="fade-up" data-aos-delay="0" data-aos-once="true">Some Other
+                Projects</p>
             <p class="center" data-aos="fade-up" data-aos-delay="100" data-aos-once="true">
                 <a href="#contact" class="subtitle underline">want to learn more?</a>
             </p>

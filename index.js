@@ -30,10 +30,12 @@ featuresEl.addEventListener("pointermove", (ev) => {
 const showMore = $('#more-experience button');
 
 showMore.click(e => {
-  if ($('.other').height() != 0) {
-    $('.other').height(0);
+  if(showMore.text() === 'Show More') {
+    showMore.text('Show Less');
+    $('#leadership').slideDown();
   } else {
-    $('.other').height('auto');
+    showMore.text('Show More');
+    $('#leadership').slideUp();
   }
 });
 
