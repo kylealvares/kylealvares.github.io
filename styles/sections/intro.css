@@ -1,0 +1,29 @@
+section#intro {
+    padding-top: 175px;
+    font-weight: 375;
+}
+
+section#intro h1 {
+    animation: landing-animation 3.6s ease-in-out;
+}
+section#intro h2 {
+    animation: landing-animation 3.9s ease-in-out;
+
+}
+section#intro h3 {
+    animation: landing-animation 4.2s ease-in-out;
+
+}
+
+section#intro p.desc {
+    max-width: 900px;
+    font-size: 24px;
+    font-stretch: 105%;
+    font-weight: 375;
+    line-height: 40px;
+    color: var(--gray-400);
+    animation: landing-animation 4.5s ease-in-out;
+}
+section#intro #keep-reading {
+    animation: landing-animation 4.8s ease-in-out;
+}

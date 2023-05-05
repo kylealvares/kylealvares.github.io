@@ -1,10 +1,20 @@
+AOS.init();
+
 const preloader = $('#preloader');
 setTimeout(() => {
-  preloader.addClass('fade-out');
+  preloader.css('animation', 'fadeOut 1s ease-out');
   setTimeout(() => {
-    preloader.css('display', 'none');
+    preloader.hide();
   }, 1000);
 }, 1800);
+
+setTimeout(() => {
+  $('nav a.box-link').css('transition-delay', '0s');
+}, 1000);
+
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelector('nav').classList.add('loaded');
+});
 
 const featuresEl = document.querySelector(".box-wrap");
 const featureEls = document.querySelectorAll(".box");
@@ -20,16 +30,16 @@ featuresEl.addEventListener("pointermove", (ev) => {
 const showMore = $('#more-experience button');
 
 showMore.click(e => {
-  if($('.other').height() != 0) {
+  if ($('.other').height() != 0) {
     $('.other').height(0);
   } else {
     $('.other').height('auto');
   }
-}); 
+});
 
 
 function resizeInput() {
-    let input = document.getElementById("email");
-    let width = input.value.length * 8 + 8; 
-    input.style.width = width + "px";
+  let input = document.getElementById("email");
+  let width = input.value.length * 8 + 8;
+  input.style.width = width + "px";
 }

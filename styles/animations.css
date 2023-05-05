@@ -1,3 +1,25 @@
-.fade-out {
-    transition: visibility 0s 2s, opacity 2s linear;
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes landing-animation {
+    0% {
+        opacity: 0;
+        transform: translateY(200%);
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
 }
