@@ -1,6 +1,11 @@
-.content {
-    padding: 0 20px;
+nav {
+    padding: 0 25px;
 }
+
+.content {
+    padding: 0 25px;
+}
+
 section#intro p.desc {
     max-width: 100%;
 }
@@ -17,7 +22,7 @@ section#about p {
     display: block;
 }
 
-.featured-projects-mobile .window{
+.featured-projects-mobile .window {
     margin-bottom: 40px;
 }
 

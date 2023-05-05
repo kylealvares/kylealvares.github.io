@@ -29,6 +29,14 @@ featuresEl.addEventListener("pointermove", (ev) => {
 
 const showMore = $('#more-experience button');
 
+$('#hamburger').click(e => {
+  $('#mobile-menu-links').slideToggle();
+});
+
+$('#mobile-menu-links a').click(e => {
+  $('#mobile-menu-links').slideUp();
+});
+
 showMore.click(e => {
   if(showMore.text() === 'Show More') {
     showMore.text('Show Less');

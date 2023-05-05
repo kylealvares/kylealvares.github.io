@@ -706,6 +706,10 @@ footer a:hover {
     display: none;
 }
 
+#mobile-menu-links {
+    display: none;
+}
+
 nav {
     position: fixed;
     align-items: center;

@@ -6,6 +6,38 @@ nav {
     display: none;
 }
 
+#mobile-menu-links {
+    position: fixed;
+    top: 30px;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 32px;
+    padding-top: 32px;
+    background-color: var(--slate-950);
+    z-index: 12;
+}
+
+#mobile-menu-links a:first-child {
+    margin-top: 32px;
+}
+
+#mobile-menu-links a {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 40px;
+    display: block;
+    font-stretch: 125%;
+    font-weight: 600;
+}
+
+#mobile-menu-links a.box-link { 
+    margin: auto;
+    width: 100px;
+    font-size: 14px;
+}
+
+
 .mobile-menu {
     display: block;
     cursor: pointer;
@@ -17,6 +49,7 @@ nav {
     stroke: var(--slate-400);
     fill: var(--slate-400);
 }
+
 .content {
     padding: 0 50px;
     width: 100%;
@@ -36,6 +69,7 @@ section#intro p.desc {
     font-size: clamp(1.2rem, 1vw, 2rem);
     line-height: 26px;
 }
+
 section:not(#intro) h2 {
     width: 100%;
     font-size: clamp(2rem, 2.2vw, 3rem);
