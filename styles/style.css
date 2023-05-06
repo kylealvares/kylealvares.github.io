@@ -720,6 +720,7 @@ nav {
     height: 70px;
     width: 100%;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     z-index: 9;
 }
 

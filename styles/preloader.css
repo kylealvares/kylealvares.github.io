@@ -12,6 +12,7 @@
 }
 
 .preloader span {
+    margin-top: -50px;
     display: inline-block;
     position: relative;
     font-size: 48px;
