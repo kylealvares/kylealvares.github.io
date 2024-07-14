@@ -28,7 +28,7 @@ body {
     display: flex;
     justify-content: center;
     min-height: 100vh;
-    min-width: 100vw;
+    /* min-width: 100vw; */
     background: linear-gradient(to bottom left, var(--slate-900), var(--slate-950), black, var(--slate-950));
 }
 
